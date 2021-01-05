@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Expert Z Direct</title>
+
+
+  <!-- CSS stylesheets -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/a6895eee20.js" crossorigin="anonymous"></script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&family=Ubuntu&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <section id="title">
+    <div class="container-fluid">
+
+      <!-- Nav Bar -->
+
+      <nav class="navbar navbar-dark navbar-expand-lg">
+
+        <a class="navbar-brand" href="">Expert Z Direct</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">Download</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+  </section>
+
+
+  <!-- Topics -->
+
+  <section class="container-planner " id="topics">
+    <div class="row">
+      <div class="col-lg-4 text-center feature-box">
+        <i class="fas fa-check-circle fa-4x icon"></i>
+        <h3>Easy to use.</h3>
+        <p>Talk to a professional within a few clicks!</p>
+      </div>
+      <div class="col-lg-4 text-center feature-box">
+        <i class="fas fa-bullseye fa-4x icon"></i>
+        <h3>High quality.</h3>
+        <p>We only work with licensed psycholists, accredited through acknowledged institutions.</p>
+      </div>
+      <div class="col-lg-4 text-center feature-box">
+        <i class="fas fa-heart fa-4x icon"></i>
+        <h3>Personal.</h3>
+        <p>Talk with someone who knows exactly how to deal with your challenges.</p>
+      </div>
+    </div>
+
+    <!-- Method 1 -->
+
+    <script src="js/searchlist.js"></script>
+
+    <input type="text" id="myInput" onkeyup="searchList()" placeholder="Search for a professional">
+
+    <ul id="myUL">
+      <li><a href="#">Adele</a></li>
+      <li><a href="#">Agnes</a></li>
+
+      <li><a href="#">Billy</a></li>
+      <li><a href="#">Bob</a></li>
+
+      <li><a href="#">Calvin</a></li>
+      <li><a href="#">Christina</a></li>
+      <li><a href="#">Cindy</a></li>
+    </ul>
+
+    <!-- Method 2 -->
+
+    <!-- Control buttons -->
+    <div id="myBtnContainer">
+      <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+      <button class="btn" onclick="filterSelection('cars')"> Cars</button>
+      <button class="btn" onclick="filterSelection('animals')"> Animals</button>
+      <button class="btn" onclick="filterSelection('fruits')"> Fruits</button>
+      <button class="btn" onclick="filterSelection('colors')"> Colors</button>
+    </div>
+
+    <!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
+    <div class="container">
+      <div class="filterDiv cars">BMW</div>
+      <div class="filterDiv colors fruits">Orange</div>
+      <div class="filterDiv cars">Volvo</div>
+      <div class="filterDiv colors">Red</div>
+      <div class="filterDiv cars animals">Mustang</div>
+      <div class="filterDiv colors">Blue</div>
+      <div class="filterDiv animals">Cat</div>
+      <div class="filterDiv animals">Dog</div>
+      <div class="filterDiv fruits">Melon</div>
+      <div class="filterDiv fruits animals">Kiwi</div>
+      <div class="filterDiv fruits">Banana</div>
+      <div class="filterDiv fruits">Lemon</div>
+      <div class="filterDiv animals">Cow</div>
+    </div>
+
+  </section>
+
+
+  <!-- Footer -->
+
+  <footer class="colored-section-light" id="footer">
+    <div class="container-fluid">
+      <i class="social-icon fab fa-facebook-f"></i>
+      <i class="social-icon fab fa-twitter"></i>
+      <i class="social-icon fab fa-instagram"></i>
+      <i class="social-icon fas fa-envelope"></i>
+      <p>© Copyright 2021 ExpertZDirect</p>
+    </div>
+  </footer>
+
+
+</body>
+
+</html>
